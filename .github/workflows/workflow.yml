@@ -18,7 +18,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v3
+    - uses: actions/checkout@v3
     - name: Run Bicep linter
       run: az bicep build --file deploy/main.bicep
 
